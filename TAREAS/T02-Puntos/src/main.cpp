@@ -101,7 +101,7 @@ int main( void ){
 	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE); 	// Resizable option.
 
 	// Open a window and create its OpenGL context
-	window = glfwCreateWindow(800, 800, "Sebastian Alexander Asis Romero", NULL, NULL);
+	window = glfwCreateWindow(800, 800, "Asis Romero Sebastian Alexander", NULL, NULL);
 
 	glfwMakeContextCurrent(window);
 
