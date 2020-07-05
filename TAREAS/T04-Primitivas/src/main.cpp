@@ -87,7 +87,7 @@ struct vertex{
 void init(){
 	renderingProgram = createShaderProgram();
 
-
+	float t=1.0f;
 	vertex verticesIniciales[3];
 
 	//p0
@@ -95,20 +95,24 @@ void init(){
 	verticesIniciales[0].color= vec3(0.8f, 0.4f, 0.8f);
 
 	//p1
-	verticesIniciales[1].position=vec3(-0.8f,0.8f,0.0f);
+	verticesIniciales[1].position= verticesIniciales[0].position + t * vec3(-1.15f,0.0f,0.0f);
 	verticesIniciales[1].color= vec3(1.0,0.0,0.0);
 
+
 	//p2
-	verticesIniciales[2].position=vec3(-0.5f,-0.1f,0.0f);
+	verticesIniciales[2].position=verticesIniciales[1].position + t *vec3(0.3f,-0.9f,0.0f);
 	verticesIniciales[2].color= vec3(0.0f, 0.6f, 0.0f);
 
 	//p3
-	verticesIniciales[3].position=vec3(0.1,-0.1f,0.0f);
+
+	verticesIniciales[3].position= verticesIniciales[2].position + t * vec3(0.6f,0.0f,0.0f);
 	verticesIniciales[3].color= vec3(0.6f, 0.6f, 0.0f);
 
 
 	vertex verticesXYZ[15];
 
+
+	//vectores directores para generar triangulos
 	vertex vd[2];
 	vd[0].position=vec3(0.45f,-0.7f,0.0f);
 	vd[0].color=vec3(0.8f, 0.4f, 0.8f);
