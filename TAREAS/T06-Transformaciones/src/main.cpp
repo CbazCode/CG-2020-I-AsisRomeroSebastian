@@ -1,9 +1,3 @@
-//============================================================================
-// Name        : Rotate Triangle Object
-// Professor   : Herminio Paucar
-// Version     :
-// Description :
-//============================================================================
 
 // Include standard headers
 #include <stdio.h>
